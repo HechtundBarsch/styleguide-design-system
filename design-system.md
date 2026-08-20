@@ -74,14 +74,14 @@ Pro Screen **einen** Grundton wählen. Light-first; Dark-Mode nur wenn ausdrück
 
 ## 3. Typografie
 
-- **Eyebrow** (Kicker): `text-transform:uppercase; letter-spacing:.2em; font-size:11px; font-weight:800; color:var(--brand-dk)` — auf Blau `color:var(--accent)`.
-- **Überschriften**: `font-family:var(--font-heading); font-weight:500; text-transform:uppercase`. H1 `clamp(24px,4vw,36px)`, H2 `clamp(18px,3vw,26px)`. (Bree Serif in Versalien = der Marken-Look.)
+- **Eyebrow** (Kicker): `text-transform:uppercase; letter-spacing:.18em; font-size:11px; font-weight:700; color:var(--brand-dk)` — auf Blau `color:var(--accent)`. (Bei so kleinem Versalientext ist 700 fett genug; 800 wirkt matschig.)
+- **Überschriften**: `font-family:var(--font-heading); font-weight:500; text-transform:uppercase`. H1 `clamp(24px,4vw,36px)`, H2 `clamp(18px,3vw,26px)`. (Bree Serif in Versalien = der Marken-Look.) UPPERCASE nur für **kurze** Überschriften (H1/H2, wenige Wörter) — längere Zeilen in normaler Groß-/Kleinschreibung setzen, sonst wird es schwer lesbar.
 - **Fließtext**: `--ink`, 14–16px, line-height 1.5–1.6. Sekundär `--muted`, Metadaten `--dim`.
 - **Zahlen** (Stats, Tabellen): fett, `font-variant-numeric:tabular-nums`, deutsches Format (`1.414`, `48,2 %`).
 
 ## 4. Komponenten
 
-**Buttons** (`border-radius:8px; font-weight:800; text-transform:uppercase; letter-spacing:.03em; transition:.15s`):
+**Buttons** (`border-radius:8px; font-weight:600; text-transform:uppercase; letter-spacing:.04em; transition:.15s`):
 ```css
 .btn-primary { background:var(--brand); color:#fff; padding:12px 26px; font-size:15px; border:none; }
 .btn-primary:hover { filter:brightness(1.06); }
@@ -90,6 +90,7 @@ Pro Screen **einen** Grundton wählen. Light-first; Dark-Mode nur wenn ausdrück
 .btn-danger  { background:var(--danger); color:#fff; border:none; }   /* destruktive Aktionen */
 ```
 Genau **ein** Primär-Button pro Sicht; alles andere Ghost. Destruktives in `--danger` + Bestätigung.
+Hinweis zur Lesbarkeit: Button-Beschriftungen sind uppercase, aber **weight 600** (nicht 800) mit etwas mehr Laufweite — Versalien in Extrafett verklumpen und werden schwer lesbar.
 
 **Karte / Panel**: `background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:0 2px 8px rgba(20,40,55,.05); padding:16–24px;`
 
@@ -136,4 +137,4 @@ Leere Zustände und Fehler geben Richtung: was ist passiert, was tun — in der 
 ---
 
 ### Kurzfassung (schnell einfügen)
-> Tools von Hecht & Barsch (intern + public). Default = heller Grund `#f7f8fd` + weiße Karten/Panels/Tabellen (Radius 12, 1px `#e1e7f0`, weicher Schatten); Aufmerksamkeits-Screens auf blauem Verlauf `#00284f→#0f4d86`, weiße Schrift + goldene (`#f8b53a`) Eyebrows. Primär-Blau `#3185da`, Navy `#003b7c`. Headings **Bree Serif, UPPERCASE, weight 500**; Body **Barlow**. Buttons uppercase/weight 800/Radius 8, ein Primär je Sicht. Hover `translateY(-2px)`+Schatten. Status-Farben `--ok/--warn/--danger` getrennt vom Marken-Blau. Tabellen: Hairline-Zeilen, Zahlen rechts + tabular-nums, Status als Badge. Echtes Logo + Favicon (offizielle Shop-Assets), kein Emoji. Keine Secrets, keine erfundenen Personen, a11y-Kontraste; Shopify-Produktdaten nie löschen.
+> Tools von Hecht & Barsch (intern + public). Default = heller Grund `#f7f8fd` + weiße Karten/Panels/Tabellen (Radius 12, 1px `#e1e7f0`, weicher Schatten); Aufmerksamkeits-Screens auf blauem Verlauf `#00284f→#0f4d86`, weiße Schrift + goldene (`#f8b53a`) Eyebrows. Primär-Blau `#3185da`, Navy `#003b7c`. Headings **Bree Serif, weight 500**, UPPERCASE nur für kurze Zeilen; Body **Barlow**. Buttons uppercase/**weight 600**/Radius 8, ein Primär je Sicht (uppercase in Extrafett vermeiden — verklumpt). Hover `translateY(-2px)`+Schatten. Status-Farben `--ok/--warn/--danger` getrennt vom Marken-Blau. Tabellen: Hairline-Zeilen, Zahlen rechts + tabular-nums, Status als Badge. Echtes Logo + Favicon (offizielle Shop-Assets), kein Emoji. Keine Secrets, keine erfundenen Personen, a11y-Kontraste; Shopify-Produktdaten nie löschen.
