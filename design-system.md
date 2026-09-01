@@ -112,7 +112,8 @@ Verwende die offiziellen Marken-Assets — **kein Emoji als Logo**.
 - **Logo:** `https://cdn.shopify.com/s/files/1/0548/9197/0669/files/doo-logo.png`
   - Im Header ca. 34px Höhe, im blauen Hero ca. 44px Höhe. Auf hellem Grund direkt einsetzbar; auf Blau ggf. mit etwas Weißraum.
   - Optional Wortmarke daneben in Bree Serif (weight 500, `letter-spacing:-.01em`), nur wenn das Logo selbst keine Wortmarke enthält.
-- **Favicon:** `https://www.hechtundbarsch.de/cdn/shop/files/hechtundbarsch-de-favicon.png`
+- **Favicon (interne Tools):** `https://cdn.shopify.com/s/files/1/0548/9197/0669/files/H_B_Favicon_white_orange.svg`
+  - Bewusst in **Weiß/Orange** (nicht im Shop-Blau), damit sich Tool-Tabs im Browser klar vom Shop unterscheiden lassen. SVG, skaliert verlustfrei auch auf 16×16.
 - **Icons:** schlichte Outline-SVGs. Keine dekorativen Emoji-Reihen.
 
 ## 6. Motion
@@ -137,4 +138,4 @@ Leere Zustände und Fehler geben Richtung: was ist passiert, was tun — in der 
 ---
 
 ### Kurzfassung (schnell einfügen)
-> Tools von Hecht & Barsch (intern + public). Default = heller Grund `#f7f8fd` + weiße Karten/Panels/Tabellen (Radius 12, 1px `#e1e7f0`, weicher Schatten); Aufmerksamkeits-Screens auf blauem Verlauf `#00284f→#0f4d86`, weiße Schrift + goldene (`#f8b53a`) Eyebrows. Primär-Blau `#3185da`, Navy `#003b7c`. Headings **Bree Serif, weight 500**, UPPERCASE nur für kurze Zeilen; Body **Barlow**. Buttons uppercase/**weight 600**/Radius 8, ein Primär je Sicht (uppercase in Extrafett vermeiden — verklumpt). Hover `translateY(-2px)`+Schatten. Status-Farben `--ok/--warn/--danger` getrennt vom Marken-Blau. Tabellen: Hairline-Zeilen, Zahlen rechts + tabular-nums, Status als Badge. Echtes Logo + Favicon (offizielle Shop-Assets), kein Emoji. Keine Secrets, keine erfundenen Personen, a11y-Kontraste; Shopify-Produktdaten nie löschen.
+> Tools von Hecht & Barsch (intern + public). Default = heller Grund `#f7f8fd` + weiße Karten/Panels/Tabellen (Radius 12, 1px `#e1e7f0`, weicher Schatten); Aufmerksamkeits-Screens auf blauem Verlauf `#00284f→#0f4d86`, weiße Schrift + goldene (`#f8b53a`) Eyebrows. Primär-Blau `#3185da`, Navy `#003b7c`. Headings **Bree Serif, weight 500**, UPPERCASE nur für kurze Zeilen; Body **Barlow**. Buttons uppercase/**weight 600**/Radius 8, ein Primär je Sicht (uppercase in Extrafett vermeiden — verklumpt). Hover `translateY(-2px)`+Schatten. Status-Farben `--ok/--warn/--danger` getrennt vom Marken-Blau. Tabellen: Hairline-Zeilen, Zahlen rechts + tabular-nums, Status als Badge. Echtes Logo + Favicon (Favicon in Weiß/Orange zur Unterscheidung vom Shop), kein Emoji. Keine Secrets, keine erfundenen Personen, a11y-Kontraste; Shopify-Produktdaten nie löschen.
